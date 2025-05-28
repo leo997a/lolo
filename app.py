@@ -10,7 +10,7 @@ if st.button("جلب النسبة"):
     if player_name_ar and club_name_ar:
         with st.spinner("جارٍ البحث..."):
             response = requests.post(
-                "https://n8n.yourserver.com/webhook/transfer-check",  # غيره لمسار Webhook الخاص بك
+                "http://localhost:5678/webhook/b04caa69-8bb1-4954-a336-eaa5f9dea321",  # غيره لمسار Webhook الخاص بك
                 json={
                     "player": player_name_ar,
                     "club": club_name_ar
